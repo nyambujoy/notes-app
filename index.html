@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,8 +23,20 @@
                         d="M20.7,7C21.1,6.6 21.1,6 20.7,5.6L18.4,3.3C18,2.9 17.4,2.9 17,3.3L15.2,5.1L19,8.9M3,17.2V21H6.8L17.8,9.9L14.1,6.1L3,17.2M7,2V5H10V7H7V10H5V7H2V5H5V2H7Z" />
                 </svg>Create Notes</button>
         </div>
-        <div class="card"></div>
+        <div class="card">
+
+        </div>
     </div>
+
+    <dialog id="modal">
+        <div class="menu">
+            <button type="submit" id="save">Save</button>
+            <p class="Trash"><i class="fa fa-trash" aria-hidden="true"></i> Trash</p>
+        </div>
+
+        <p contenteditable="true" id="noteContent">Hello world</p>
+
+    </dialog>
 
 
     <script src="app.js"></script>
